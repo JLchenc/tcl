@@ -1,0 +1,723 @@
+@charset "utf-8";
+@import "header";
+@import "footer";
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	
+}
+a{
+	text-decoration: none;
+}
+.clear:after {
+	content:"."; display:block; height:0; visibility:hidden; clear:both; 
+} 
+html,body{
+	width:100%;
+	color: #666;
+    font-family: "Microsoft YaHei","PingFang SC";
+	background: #f2f2f2;
+}
+img{
+	display:inline-block;
+}
+span{
+	display: block;
+}
+.wrapper{
+	width:1226px;
+	margin:0 auto;
+	position:relative;
+}
+
+#banner{
+	margin-top:-20px;
+	position:relative;
+	height:550px;
+	img {
+    max-width: 1920px;
+    width: auto;
+	}
+	.ban-nav {
+	    z-index: 100;
+		width: 176px;
+		position: absolute;
+		top:-553px;
+		background-color: rgba(0,0,0,.5);
+		.ul{
+		    width: 176px;
+			height:550px;
+			color: #666;
+			li{
+				width: 176px; 
+				height: 67px;
+			    line-height: 67px;
+			    cursor: pointer;
+				padding-left:35px;
+				padding-top:10px;
+				float:left;
+			}
+			li i{
+				font-size: 14px;
+				width: 14px;
+				height: 67px;
+				color: #fff;
+			}
+		a{
+			color: #fff;
+		    font-size: 14px;
+			display: block;
+		} 
+		}
+	}
+}
+
+
+
+#banner .ban-nav-cont {
+	position: absolute;
+	top: -553px;
+	left:176px;
+	width:758px ;
+	height:550px;
+	background-color: #fff;
+	border-top: 1px solid #efe7e7;
+	display:none;
+	.ban-cont-list {
+		margin:50px 25px;
+		li{
+			margin: 0 38px 38px 23px;
+			color: #666;
+		    font-size: 100%;
+			float:left;
+			.dj{
+				display: inline-block;
+				vertical-align: middle;
+				width: 168px;
+				font-size: 14px;
+				button{
+					margin-top:20px;
+					width: 98px;
+				    height: 28px;
+				    border: 1px solid #f30;
+				    text-align: center;
+				    line-height: 28px;
+				    color: #f30;
+				    cursor: pointer;
+					background:white;
+				}
+			}
+			img{
+				width: 120px;
+			    height: 120px;
+				display:inline-block ;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+
+//float_nav
+.float_nav{
+	top: 250px;
+	left:180px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+	border: 1px solid red;
+	 li{
+		font-size:18px;
+		text-align: center;
+		a{
+			display:block;
+			line-height: 40px;
+			cursor: pointer;
+			border-bottom: 1px solid #CCCCCC;
+			padding: 15px 15px;
+			color:#9f9f9f;
+		} 
+	}
+}
+
+ 
+//新品介绍new_product
+.new_product{
+	li{
+		padding:40px 8px 40px 0;
+		float:left;
+		img{
+			width: 400px;
+		    height: 220px;
+		}
+	}
+}
+
+//电视
+.television{
+	position: relative;
+	margin-bottom:40px;
+	header{
+		margin-bottom: 20px;
+		a {
+		    font-size: 14px;
+			color: #555;
+			display:block;
+			padding:0 10px;
+		}
+	}
+	h2{
+		font-size: 22px;
+	    font-weight: 400;
+	    border-left: 4px solid #fe0000;
+	    padding-left: 15px;
+	    margin-right: 36px;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.television_left{
+		float:left;
+		height: 614px;
+	}
+	.television_right{
+		width:930px;
+		float:left;
+		li{
+			width: 296px;
+			height:300px;
+		    background-color: #fff;
+		    position: relative;
+			margin:0 0 15px 12px;
+		
+		}
+		img{
+			display: inline;
+			height: 180px;
+		    width: 180px;
+		    margin: 4px 60px 2px;
+			vertical-align: middle;
+		}
+		.hot-sell{
+			width:52px;
+			height:52px;
+			position: absolute;
+			top:0;
+			right:65px;
+			img{
+				display: block;
+				width:52px;
+				height:52px;
+				
+			}
+		}
+		.price {
+		    font-size: 14px;
+		    color: #ff2524;
+		    margin-top: 10px;
+		    font-weight: 600;
+			text-align: center;
+		}
+		.title {
+		    font-size: 14px;
+		    color: #333;
+			margin-left:38px;
+		}
+		.dice {
+			font-size: 12px;
+		    color: #9b9b9b;
+		    margin: 12px auto 0;
+		    height: 30px;
+		    line-height: 15px;
+		    overflow: hidden;
+		    width: 237px;
+		}
+	}
+	
+	.more {
+		position: absolute;
+	    right: 20px;
+		top:10px;
+	    font-size: 12px;
+	    color: #fe0000;
+	}
+	ul{
+		display: inline-block;
+	    vertical-align: middle;
+	    font-size: 12px;
+		li{
+			float: left;   
+		}
+	}
+}
+//洗衣机
+.washing{
+	position: relative;
+	margin-bottom:40px;
+	header{
+		margin-bottom: 20px;
+		a {
+		    font-size: 14px;
+			color: #555;
+			display:block;
+			padding:0 10px;
+		}
+	}
+	h2{
+		font-size: 22px;
+	    font-weight: 400;
+	    border-left: 4px solid #fe0000;
+	    padding-left: 15px;
+	    margin-right: 36px;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.washing_left{
+		float:left;
+		height: 614px;
+	}
+	.washing_right{
+		width:930px;
+		float:left;
+		li{
+			width: 296px;
+			height:300px;
+		    background-color: #fff;
+		    position: relative;
+			margin:0 0 15px 12px;
+		
+		}
+		img{
+			display: inline;
+			height: 180px;
+		    width: 180px;
+		    margin: 4px 60px 2px;
+			vertical-align: middle;
+		}
+		.hot-sell{
+			width:52px;
+			height:52px;
+			position: absolute;
+			top:0;
+			right:65px;
+			img{
+				display: block;
+				width:52px;
+				height:52px;
+				
+			}
+		}
+		.price {
+		    font-size: 14px;
+		    color: #ff2524;
+		    margin-top: 10px;
+		    font-weight: 600;
+			text-align: center;
+		}
+		.title {
+		    font-size: 14px;
+		    color: #333;
+			margin-left:38px;
+		}
+		.dice {
+			font-size: 12px;
+		    color: #9b9b9b;
+		    margin: 12px auto 0;
+		    height: 30px;
+		    line-height: 15px;
+		    overflow: hidden;
+		    width: 237px;
+		}
+	}
+	
+	.more {
+		position: absolute;
+	    right: 20px;
+		top:618px;
+	    font-size: 12px;
+	    color: #fe0000;
+	}
+	ul{
+		display: inline-block;
+	    vertical-align: middle;
+	    font-size: 12px;
+		li{
+			float: left;   
+		}
+	}
+}
+//冰箱
+.refrigerator{
+	position: relative;
+	margin-bottom:40px;
+	header{
+		margin-bottom: 20px;
+		a {
+		    font-size: 14px;
+			color: #555;
+			display:block;
+			padding:0 10px;
+		}
+	}
+	h2{
+		font-size: 22px;
+	    font-weight: 400;
+	    border-left: 4px solid #fe0000;
+	    padding-left: 15px;
+	    margin-right: 36px;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.refrigerator_left{
+		float:left;
+		height: 614px;
+	}
+	.refrigerator_right{
+		width:930px;
+		float:left;
+		li{
+			width: 296px;
+			height:300px;
+		    background-color: #fff;
+		    position: relative;
+			margin:0 0 15px 12px;
+		
+		}
+		img{
+			display: inline;
+			height: 180px;
+		    width: 180px;
+		    margin: 4px 60px 2px;
+			vertical-align: middle;
+		}
+		.hot-sell{
+			width:52px;
+			height:52px;
+			position: absolute;
+			top:0;
+			right:65px;
+			img{
+				display: block;
+				width:52px;
+				height:52px;
+				
+			}
+		}
+		.price {
+		    font-size: 14px;
+		    color: #ff2524;
+		    margin-top: 10px;
+		    font-weight: 600;
+			text-align: center;
+		}
+		.title {
+		    font-size: 14px;
+		    color: #333;
+			margin-left:38px;
+		}
+		.dice {
+			font-size: 12px;
+		    color: #9b9b9b;
+		    margin: 12px auto 0;
+		    height: 30px;
+		    line-height: 15px;
+		    overflow: hidden;
+		    width: 237px;
+		}
+	}
+	
+	.more {
+		position: absolute;
+	    right: 20px;
+		top:10px;
+	    font-size: 12px;
+	    color: #fe0000;
+	}
+	ul{
+		display: inline-block;
+	    vertical-align: middle;
+	    font-size: 12px;
+		li{
+			float: left;   
+		}
+	}
+}
+//空调
+.conditioner{
+	position: relative;
+	margin-bottom:40px;
+	header{
+		margin-bottom: 20px;
+		a {
+		    font-size: 14px;
+			color: #555;
+			display:block;
+			padding:0 10px;
+		}
+	}
+	h2{
+		font-size: 22px;
+	    font-weight: 400;
+	    border-left: 4px solid #fe0000;
+	    padding-left: 15px;
+	    margin-right: 36px;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.conditioner_left{
+		float:left;
+		height: 614px;
+	}
+	.conditioner_right{
+		width:930px;
+		float:left;
+		li{
+			width: 296px;
+			height:300px;
+		    background-color: #fff;
+		    position: relative;
+			margin:0 0 15px 12px;
+		
+		}
+		img{
+			display: inline;
+			height: 180px;
+		    width: 180px;
+		    margin: 4px 60px 2px;
+			vertical-align: middle;
+		}
+		.hot-sell{
+			width:52px;
+			height:52px;
+			position: absolute;
+			top:0;
+			right:65px;
+			img{
+				display: block;
+				width:52px;
+				height:52px;
+				
+			}
+		}
+		.price {
+		    font-size: 14px;
+		    color: #ff2524;
+		    margin-top: 10px;
+		    font-weight: 600;
+			text-align: center;
+		}
+		.title {
+		    font-size: 14px;
+		    color: #333;
+			margin-left:38px;
+		}
+		.dice {
+			font-size: 12px;
+		    color: #9b9b9b;
+		    margin: 12px auto 0;
+		    height: 30px;
+		    line-height: 15px;
+		    overflow: hidden;
+		    width: 237px;
+		}
+	}
+	
+	.more {
+		position: absolute;
+	    right: 20px;
+		top:10px;
+	    font-size: 12px;
+	    color: #fe0000;
+	}
+	ul{
+		display: inline-block;
+	    vertical-align: middle;
+	    font-size: 12px;
+		li{
+			float: left;   
+		}
+	}
+}
+//健康电器
+.electric{
+	position: relative;
+	margin-bottom:40px;
+	header{
+		margin-bottom: 20px;
+		a {
+		    font-size: 14px;
+			color: #555;
+			display:block;
+			padding:0 10px;
+		}
+	}
+	h2{
+		font-size: 22px;
+	    font-weight: 400;
+	    border-left: 4px solid #fe0000;
+	    padding-left: 15px;
+	    margin-right: 36px;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.electric_left{
+		float:left;
+		height: 614px;
+	}
+	.electric_right{
+		width:930px;
+		float:left;
+		li{
+			width: 296px;
+			height:300px;
+		    background-color: #fff;
+		    position: relative;
+			margin:0 0 15px 12px;
+		
+		}
+		img{
+			display: inline;
+			height: 180px;
+		    width: 180px;
+		    margin: 4px 60px 2px;
+			vertical-align: middle;
+		}
+		.hot-sell{
+			width:52px;
+			height:52px;
+			position: absolute;
+			top:0;
+			right:65px;
+			img{
+				display: block;
+				width:52px;
+				height:52px;
+				
+			}
+		}
+		.price {
+		    font-size: 14px;
+		    color: #ff2524;
+		    margin-top: 10px;
+		    font-weight: 600;
+			text-align: center;
+		}
+		.title {
+		    font-size: 14px;
+		    color: #333;
+			margin-left:38px;
+		}
+		.dice {
+			font-size: 12px;
+		    color: #9b9b9b;
+		    margin: 12px auto 0;
+		    height: 30px;
+		    line-height: 15px;
+		    overflow: hidden;
+		    width: 237px;
+		}
+	}
+	
+	.more {
+		position: absolute;
+	    right: 20px;
+		top:10px;
+	    font-size: 12px;
+	    color: #fe0000;
+	}
+	ul{
+		display: inline-block;
+	    vertical-align: middle;
+	    font-size: 12px;
+		li{
+			float: left;   
+		}
+	}
+}
+//fans
+.fans{
+	width: 100%;
+	background-color: #FFF;
+	.wrapper{
+		margin: 0 auto;
+		position: relative;	
+		width: 1226px;	
+	}
+	.fans-item {
+		float:left;
+		margin: 14px 14px 10px 0;
+		img{
+			width:100%; 
+		}
+		.fans-box {
+		    background-color: #f3f3f3;
+			width:228px;
+			height:115px;
+			padding: 36px 34px;
+			.fans-title {
+			    font-size: 14px;
+			    height: 24px;
+			    line-height: 24px;
+			    overflow: hidden;
+			    color: #333;
+			    margin-bottom: 10px;
+			}
+			.fans-news {
+			    font-size: 12px;
+			    display: inline-block;
+			    text-align: center;
+			    background-color: #4b89f1;
+			    vertical-align: top;
+			    color: #FFF;
+				margin:0 10px 0 0;
+				padding:0 10px 0 10px;
+				line-height: 24px;
+			}
+			.fans-describe {
+			    font-size: 12px;
+			    line-height: 14px;
+			    color: #666;
+			    margin-bottom: 18px;
+			}
+			.fans-details {
+			    font-size: 12px;
+			    line-height: 12px;
+			    color: #666;
+			}
+		}
+	}
+	.fans-more {
+	    text-align: center;
+	    font-size: 12px;
+		a{
+			line-height: 100px;
+			color: #666;
+		}
+	    
+	}	
+}
+.goTop {
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+    z-index: 20000;
+    
+	a{
+		display: block;
+		width: 46px;
+		height: 46px;
+		color:#666;
+		font-size: 26px;
+		border: 1px solid #CCCCCC;
+		text-align: center;
+		margin-top: 5px;
+		background-color: #FFFFFF;
+		line-height: 46px;
+		
+	}
+}
+ 
+ 
+	

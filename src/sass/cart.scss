@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "header";
+@import "footer";
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	float:left;
+}
+a{
+	text-decoration: none;
+}
+.clear:after { 
+	content:"."; display:block; height:0; visibility:hidden; clear:both; 
+} 
+html,body{
+	width:100%;
+	color: #666;
+    font-family: "Microsoft YaHei","PingFang SC";
+	background: #f2f2f2;
+}
+.nothing{
+	width: 100%;
+	img{
+		display: block;
+		width: 50%;
+	}
+	
+}

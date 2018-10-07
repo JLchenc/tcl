@@ -1,0 +1,182 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	
+}
+a{
+	text-decoration: none;
+}
+.clear:after {
+	content:"."; display:block; height:0; visibility:hidden; clear:both; 
+} 
+#header{
+	width:100%;
+	li{
+		float: left;
+	}
+}
+.wrapper{
+	width: 1226px;
+	margin: 0 auto ;
+	position: relative;
+}
+.header_top{
+	width:auto;
+	height:40px;
+	background:#666;
+	a{
+		font-size: 11px;
+		color:#ccc;
+		display: block;
+		padding-right:10px;
+	}
+	
+	.header_top_right{
+		position: absolute;
+		right: 20px;
+		top:-15px;
+		li {
+			padding:30px 10px;
+			a{
+			  border-right:1px solid #CCCCCC;
+			}   
+		}
+	}
+
+	.header_top_right li .wechat{
+		display: none;
+		position: absolute;
+		top:57px;
+		width: 180px;
+		height: 200px;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		text-align: center;
+		z-index: 99;
+		left: -30px;
+		img{
+			width: 140px;
+			height: 140px;
+			margin-top: 10px;
+		}
+		p{
+			font-size: 10px;
+			line-height: 160%;
+		}
+	}
+	.header_top_left {
+		li {
+			padding:15px 20px 15px 0px;
+			
+		}
+	}
+}
+
+
+.header_bottom {
+	margin-top: -20px;
+	width:auto;
+	background:#FFFFFF;
+	
+	li{
+		line-height: 80px;
+		padding-right:20px;
+		a{
+			font-size: 14px;
+		    color: #333;
+		    display: block;
+		
+		}
+	}
+	.header_bottom_left{
+		position:absolute;
+		left:180px;
+		top: 10px;	
+		h1{
+			width: 75px;
+			font-family: iconfont-tcl;
+			font-weight: 100;
+			a{
+				display: block;
+				font-size: 80px;
+				color: red;
+				width: 75px;
+				padding-left: 15px;
+			}
+		}
+	}
+	.header_bottom_right{
+	 	position: absolute;
+	 	right:0px;top:10px;
+		input{
+			width:233px;
+			height:30px;
+			line-height: 30px;
+			font-size:14px;
+		}
+		span{
+			background-color: #e4e4e4;
+			width: 28px;
+			height: 28px;
+			text-align: center;
+			line-height: 28px;
+			border-radius: 50%;
+			position: absolute;
+			right: 25px;
+			top: 28px;
+			cursor: pointer;
+		}
+	}
+}
+.li_nav{
+	display:none;
+	margin-top: -20px;
+	height: 210px;
+    padding: 30px 0 20px;
+    text-align: center;
+	ul{
+		max-width: 1920px;
+		height: 100%;
+		margin: 0 auto;
+		display: inline-block;
+		li{
+			width:160px;
+			
+		}
+
+	}
+	a{
+		display: block;
+		font-size: 12px;
+		.description{	
+			margin-top: -20px;
+			height: 12px;
+			font-size: 12px;
+			line-height: 12px;
+			text-align: center;
+			color: #333;
+			overflow: hidden;
+			
+		} 
+		.red{
+			font-size: 12px;
+			line-height: 24px;
+			color: red;
+		}
+		img{
+			width:100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+ 
