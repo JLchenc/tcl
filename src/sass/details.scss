@@ -12,8 +12,8 @@ li{
 a{
 	text-decoration: none;
 }
-.clear{
-	clear: both;
+.clear:after {
+	content:"."; display:block; height:0; visibility:hidden; clear:both; 
 }
 html,body{
 	width:100%;
@@ -154,6 +154,7 @@ span{
 			}
 		}	
 		.details_right_4{
+			position: relative;
 			border-bottom: 1px solid #CCCCCC;
 			padding-bottom: 20px;
 			padding-top: 20px;
@@ -163,15 +164,35 @@ span{
 				margin-right: 10px;
 				display: inline-block;
 				border: 1px solid #ccc;
+				text-indent: 25px;
 				overflow: hidden;
 				position: relative;
 			}
 			.modification{
 				width: 32px;
 				height: 64px;
-				right: 0;
+				border: 1px solid #ccc;
 				position: absolute;
+				left: 58px;
+				top: 20px;
 			}
+			
+			span{
+				display: block;
+				cursor: pointer;
+				width: 22px;
+				height: 10px;
+				margin-left: 10px;
+				margin-top: 15px;
+				text-align: center;
+				}
+			.add{
+				background: url(../images/iconimg.png) no-repeat -277px -45px;
+				}
+			.reg{
+					background: url(../images/iconimg.png) no-repeat -245px -45px;
+			}
+			
 			.buy_details{
 				a{
 					display: inline-block;

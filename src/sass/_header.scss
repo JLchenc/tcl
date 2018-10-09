@@ -1,10 +1,10 @@
+@charset "utf-8";
 *{
 	padding: 0;
 	margin: 0;
 }
 li{
 	list-style: none;
-	
 }
 a{
 	text-decoration: none;
@@ -45,11 +45,11 @@ a{
 			}   
 		}
 	}
-
+//
 	.header_top_right li .wechat{
-		display: none;
+		display: block;
 		position: absolute;
-		top:57px;
+		top:55px;
 		width: 180px;
 		height: 200px;
 		background-color: #fff;
@@ -77,37 +77,49 @@ a{
 
 
 .header_bottom {
-	margin-top: -20px;
+	margin-top: -21px;
 	width:auto;
 	background:#FFFFFF;
-	
+	position: relative;
 	li{
 		line-height: 80px;
 		padding-right:20px;
 		a{
 			font-size: 14px;
-		    color: #333;
-		    display: block;
+		  color: #333;
+		  display: block;
 		
+		}
+	}
+	h1{
+		width: 75px;
+		font-family: iconfont-tcl;
+		font-weight: 100;
+		a{
+			display: block;
+			font-size: 80px;
+			color: red;
+			width: 75px;
+			margin-left: -15px;
+			margin-top: 0px;
 		}
 	}
 	.header_bottom_left{
 		position:absolute;
-		left:180px;
-		top: 10px;	
-		h1{
-			width: 75px;
-			font-family: iconfont-tcl;
-			font-weight: 100;
+		left:150px;
+		top: 10px;
+		li{
 			a{
+				height: 70px;
 				display: block;
-				font-size: 80px;
-				color: red;
-				width: 75px;
-				padding-left: 15px;
+				padding-left: 10px;
+				padding-right: 10px;
+				
 			}
+			
+			
 		}
-	}
+		}
 	.header_bottom_right{
 	 	position: absolute;
 	 	right:0px;top:10px;
@@ -116,6 +128,8 @@ a{
 			height:30px;
 			line-height: 30px;
 			font-size:14px;
+			text-indent: 15px;
+			outline: none;
 		}
 		span{
 			background-color: #e4e4e4;

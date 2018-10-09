@@ -1,3 +1,14 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
 .clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
 #footer{
 	width:100%;	
@@ -84,7 +95,7 @@
 				position: relative;
 				font-size: 12px;
 				color: #999;
-				padding-left: 45px;
+		
 					a{
 						color:#999;
 						padding: 0 20px;
