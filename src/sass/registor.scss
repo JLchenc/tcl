@@ -54,207 +54,33 @@ img{
 
 .middle{
 	position: relative;
-	.middle_right{
-		width: 280px;
-		padding:15px 40px 40px;
-		position: absolute;
-		right: 300px;
-		top: 20px;
 
-		background: #FFFFFF;
-		.login_cont{
-			margin-top: 20px;
-
-		
-			h3 {
-				float: left;
-				line-height: 32px;
-				color: #333;
-				font-weight: 400;
-				margin-bottom: 10px;
-			}
-			
-		}	
-		.login-title{
-			padding-top: 5px;
-			font-size: 18px;
-			color: #333;
-			line-height: 36px;
-		}
-			input{
-				border: 1px solid #999;
-				padding: 0;
-				width: 280px;
-				height: 40px;
-				line-height: 40px;
-				text-indent: 50px;
-				font-size: 12px;
-				box-sizing: border-box;
-				outline: none;
-			}
-		}
 	}
 .middle>img{
 	width: 100%;
 }
-.message{
-	span{
-		display:block;
-		width: 86px;
-		height: 36px;
-		background: red;
-	}
-	.message1{
-		margin-top: 3px;
-		position: relative;
-		.phone{
-			position: absolute;
-			left: 6px;
-			top: 48px;
-			width: 28px;
-			height: 28px;
-			display: inline-block;
-			background: url(../images/user.png) no-repeat -28px 2px;
-		}
-	}
-	.sr_phone{
-		display: none;
-		position: absolute;
-		top:115px;
-		left: 40px;
-		color: red;
-		font-size: 12px;
-		text-indent: 10px;
-		line-height: 16px;
-	}
-	.message2{
-		margin-top: 25px;
-		position: relative;
-		.img_verification{
-			position: absolute;
-			left: 6px;
-			top: 6px;
-			width: 28px;
-			height: 28px;
-			display: inline-block;
-			background: url(../images/user.png) no-repeat -92px 3px;
-		}
-	
-		.yzm_img{
-			position: absolute;
-			right: 1px;
-			top: 1px;
-			width: 85px;
-			height: 38px;
-			background: #f0f0f0;
-			border-left: 1px solid #cdd1d4;
-			text-align: center;
-			line-height: 38px;
-			color: red;
-			cursor: pointer;
-			font-size: 12px;
-			z-index: 0;
-			img{
-				width:100%;
-				height: 100%;
-				display: block;
-			}
-		}
-	}
-	.sr_password{
-		display: none;
-		color: red;
-		font-size: 12px;
-		text-indent: 10px;
-		line-height: 16px;
-		position: absolute;
-		top: 180px;
-	}
-	.message3{
-		margin-top: 25px;
-		position: relative;
-		.message_verification{
-			position: absolute;
-			left: 6px;
-			top: 6px;
-			width: 28px;
-			height: 28px;
-			display: inline-block;
-			background: url(../images/user.png) no-repeat -123px 3px;
-		}
-		.yzm_message{
-			position: absolute;
-			right: 1px;
-			top: 1px;
-			width: 85px;
-			height: 38px;
-			background: #f0f0f0;
-			border-left: 1px solid #cdd1d4;
-			text-align: center;
-			line-height: 38px;
-			color: red;
-			cursor: pointer;
-			font-size: 12px;
-			z-index: 0;
-		}
-	}
-	.sr_message{
-		display: none;
-		color: red;
-		font-size: 12px;
-		text-indent: 10px;
-		line-height: 16px;
-		position: absolute;
-		top: 248px;
-	}
-	
-}
-.check{
-		margin: 25px 0 15px;
-		font-size: 14px;
-		height: 20px;
-		cursor: pointer;
-		input{
-			display: inline-block;
-			vertical-align: middle;
-		}
-		span{
-			display: inline-block;
-			vertical-align: middle;
-			cursor: pointer;
-			font-size: 14px;
-		}
-	}
-button{
-	width: 280px;
-	height: 40px;
-	line-height: 40px;
-	background: red;
-	border: 0;
-	a{
-		color: #ffff;
-	}
-}
-.short_message{ 
-	padding-bottom: 30px;
-	margin-top: 20px;
-	a{
-		color: #333;
-		line-height: 20px;
-		display: inline-block;
-	}
-	.font14{
-	    font-size: 14px!important;
-		float: left;
-	}
-	.red{
-		color: red!important;
-		font-size: 14px!important;
-		float: right;
-	}
-	
-}
 
+
+
+fieldset{
+			width: 650px;
+			margin: 0 auto;
+			p{
+				maigin:15px auto;
+			}
+			}
+			.fwidth{
+				width: 80px;
+				float: left;
+				
+			}
+			.error{
+				color:red;
+			}
+			
+	
+		
+		
 .footer{
 	margin-top: 40px;
 	width: 100%;
@@ -287,4 +113,4 @@ button{
 		}
 	}
 	
-}
+    }

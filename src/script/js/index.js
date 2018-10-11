@@ -6,6 +6,30 @@
 	//第二个参数：选择器。
 	$('#footer').load('footer.html');
 }(jQuery);
+
+
+!function($){
+// 	 $('.bn_li').hover(function(){
+// 		$(this).css({'background-color':'#fff'},{'opcity':0.9}).children().css({'color':'red'}).children().css({'color':'red'});
+// 		$('.ban-nav-cont').show()
+// 	},function(){
+// 		$(this).css({'background-color': '#000000'},{'opcity':0.1}).children().css({'color':'#666'}).children().css({'color':'#666'})
+// 		$('.ban-nav-cont').hide();
+// 	})	 
+	$('.bn_li').mouseover(function(){
+		$('.bn_li').css('background-color','rgba(0,0,0,.9)');
+		$('.bn_li').css('color','red');
+		$('.ban-nav-cont').show();
+	});
+	
+	$('.bn_li').mouseout(function(){
+		$('.ban-nav-cont').hide();
+		$(this).css('background-color','rgba(0,0,0,.05)');
+		$('.bn_li').css({'color':'#666'});
+	});
+// 
+	}(jQuery);	
+	
  $(function(){
 	var i = 0 ;
 	var timer;
@@ -114,9 +138,10 @@
 				scrollTop: $top
 			});
 		});
-		
-		
     });
+		
+		
+		
  }())
 	
      

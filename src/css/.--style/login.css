@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none;
+  float: left; }
+
+a {
+  text-decoration: none; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+html, body {
+  width: 100%;
+  color: #666;
+  font-family: "Microsoft YaHei","PingFang SC";
+  background: #fff; }
+
+img {
+  display: block; }
+
+.header {
+  width: 100%;
+  background: #fff;
+  line-height: 85px;
+  height: 85px; }
+  .header p {
+    width: 1206px;
+    margin: 0 auto;
+    height: 45px; }
+  .header span {
+    font-size: 32px;
+    color: #666;
+    margin-left: 30px;
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: middle; }
+  .header a {
+    display: inline-block;
+    width: 76px; }
+    .header a img {
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+
+.middle {
+  width: 100%;
+  position: relative; }
+  .middle .middle_right {
+    width: 280px;
+    padding: 30px 40px;
+    position: absolute;
+    right: 300px;
+    top: 20px;
+    border: 1px solid red;
+    background: #FFFFFF; }
+    .middle .middle_right .login_cont {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #666; }
+      .middle .middle_right .login_cont h3 {
+        float: left;
+        line-height: 32px;
+        color: #333;
+        font-weight: 400; }
+      .middle .middle_right .login_cont .qq {
+        float: right; }
+      .middle .middle_right .login_cont a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin: 0 2px; }
+      .middle .middle_right .login_cont .ico01 {
+        background-image: url(../images/qq.png);
+        background-position: 0px 32px; }
+      .middle .middle_right .login_cont .ico02 {
+        background-image: url(../images/qq.png);
+        background-position: 0px 74px; }
+      .middle .middle_right .login_cont .ico03 {
+        background-image: url(../images/qq.png);
+        background-position: 0px 116px; }
+    .middle .middle_right .login-title {
+      padding-top: 5px;
+      font-size: 18px;
+      color: #333;
+      line-height: 36px; }
+    .middle .middle_right input {
+      border: 1px solid #999;
+      padding: 0;
+      width: 280px;
+      height: 40px;
+      line-height: 40px;
+      text-indent: 50px;
+      font-size: 12px;
+      box-sizing: border-box;
+      outline: none; }
+
+fieldset {
+  margin: 0 auto; }
+
+label {
+  float: left; }
+
+.middle > img {
+  width: 100%; }
+
+.message .message1 {
+  margin-top: 10px;
+  position: relative; }
+  .message .message1 .user {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background: url(../images/user.png) no-repeat -28px 3px; }
+.message .sr_phone {
+  color: red;
+  font-size: 12px;
+  text-indent: 10px;
+  line-height: 16px;
+  position: absolute;
+  top: 200px;
+  display: none; }
+.message .message2 {
+  padding-top: 25px;
+  position: relative; }
+  .message .message2 .pass {
+    position: absolute;
+    left: 6px;
+    top: 26px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background: url(../images/user.png) no-repeat -92px 3px; }
+.message .sr_password {
+  color: red;
+  font-size: 12px;
+  text-indent: 10px;
+  line-height: 16px;
+  position: absolute;
+  top: 265px;
+  display: none; }
+
+button {
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+  background: red;
+  border: 0;
+  margin-top: 25px; }
+  button a {
+    color: #ffff; }
+
+.short_message {
+  width: 350px;
+  margin-top: 10px;
+  padding-bottom: 50px; }
+  .short_message a {
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    margin-right: 40px;
+    display: inline-block; }
+
+.footer {
+  margin-top: 40px;
+  width: 100%; }
+  .footer .footer_box {
+    width: 1226px;
+    margin: 0 auto; }
+    .footer .footer_box .footnav {
+      padding-left: 365px; }
+      .footer .footer_box .footnav a {
+        display: inline-block;
+        width: 92px;
+        text-align: center;
+        border-right: 1px solid #ccc;
+        line-height: 12px;
+        font-size: 12px;
+        color: #666; }
+    .footer .footer_box .footbottom {
+      font-size: 12px;
+      color: #999;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 13px; }
+      .footer .footer_box .footbottom a {
+        line-height: 12px;
+        font-size: 12px;
+        color: #666; }
+
+/*# sourceMappingURL=login.css.map */

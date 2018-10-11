@@ -15,47 +15,38 @@
 
 		<div class="middle">
 			<img src="images/bj.jpg">
-			<div class="middle_right">
-				<div class="login_cont">
-					<h3>注册TCL账号</h3>
-				</div>
-				<div class="message">
-					<div class="message1">
-						<span class="phone"></span>
-						<input type="text" class="phone_number" placeholder="手机号码"><br />
-					</div>
-					<p class="sr_phone">请输入手机号 / 邮箱 / 用户名！</p>
-					<div class="message2">
-						<!-- verification验证 -->
-						<span class="img_verification"></span>
-						<input type="password" class="password" placeholder="图形验证码"><br />
-						<span class="yzm_img"><img src="https://login.tclclouds.com/account/getcaptchapic?key=fddf3ccf549b8bfd4f6406e9699652693e3655242018e45d2264cede3beb116a0d86bc28b2ba4e75" alt=""></span>
-					</div>
-					<p class="sr_password">请输入密码</p>
-					<div class="message3">
-						<span class="message_verification"></span>
-						<input type="password" class="password" placeholder="短信验证码"><br />
-						<span class="yzm_message">获取验证码</span>
-					</div>
-					<p class="sr_message">短信验证码有误</p>
-				</div>
-				
-				<div class="check">
-					<input type="checkbox" style="width: 12px;height: 12px;">
-					<span class="agree" >已阅读并同意用户服务条款和隐私政策</span>
-				</div>
-				
-				
-				<button><a href="#">注册</a></button>
-
-				<p class="short_message">
-					<a class="font14" href="#">已有账号直接登陆</a>
-					<a class="red" href="#">推荐第三方登录</a>
-		
-				</p>
+			<fieldset>
+				<legend>用户注册</legend>
+				<form action="reg.php" method="post" id="form1">
+					<p>
+						<label class="fwidth" for="username">用户名：</label>
+						<input type="text" name="username" id="username"/>
+						<!--<span>(必填，3-15字符长度，支持汉字、字母、数字及_)</span>-->
+						<label id="username-error" class="error" for="username">(必填，3-15字符长度，支持汉字、字母、数字及_)</label>
+					</p>
+					<p>
+						<label class="fwidth" for="password">密码：</label>
+						<input type="password" name="password" id="password"/>
+						<label id="password-error" class="error" for="password">(必填，不得少于6位)</label>
+					</p>
+					<p>
+						<label class="fwidth" for="repass">密码重复：</label>
+						<input type="password" name="repass" id="repass"/>
+						<label id="repass-error" class="error" for="repass">(必填，不得少于6位)</label>
+					</p>
+					<p>
+						<label class="fwidth" for="email">邮箱：</label>
+						<input type="text" name="email" id="email"/>
+						<label id="email-error" class="error" for="email">(必填)</label>
+					</p>
+					<p>
+						<input type="submit" value="注册" name="submit" />
+					</p>
+				</form>
+			</fieldset>
 
 
-		</div>
+
 			<div class="footer">
 				<div class="footer_box">
 					<p class="footnav">
@@ -64,9 +55,14 @@
 						<a href="http://www.tcl.com/group/news/index">新闻中心</a>
 						<a href="http://www.tcl.com/dealer/toLogin" style="border: 0;">经销商之家</a>
 					</p>
-					<p class="footbottom"> ©2010-2016 TCL CORPORATION All Rights Reserved. <a href="http://www.tcl.com:80/frontshow/content/getContent/bf9d8fe2ec834c178f7bd2ba2272adfa">使用条款</a>TCL集团股份有限公司版权所有 粤ICP备05040863号</p>
+					<p class="footbottom"> ©2010-2016 TCL CORPORATION All Rights Reserved. <a href="http://www.tcl.com:80/frontshow/content/getContent/bf9d8fe2ec834c178f7bd2ba2272adfa">使用条款</a>TCL集团股份有限公司版权所有粤ICP备05040863号</p>
 				</div>
-				
 			</div>
+			
+		</div>	
 			<script src="script/thirdplugins/jquery.js" type="text/javascript"></script>
+			<script src="script/thirdplugins/jquery.validate.js" type="text/javascript"></script>
 			<script src="script/js/registor.js" type="text/javascript"></script>
+			
+</body>
+</html>

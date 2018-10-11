@@ -107,7 +107,7 @@ span {
 #banner {
     margin-top: -21px;
     height: 550px;
-    
+    position: relative;
 
 
     // 轮播图侧边导航栏
@@ -118,23 +118,30 @@ span {
         top: -560px;
         background-color: rgba(0, 0, 0, 0.5);
         .ul {
+					margin-top: 10px;
+					padding-top: 15px;
+					padding-bottom: 20px;
             width: 176px;
-            height: 550px;
             color: #666;
             li {
                 width: 176px;
                 height: 67px;
                 line-height: 67px;
                 cursor: pointer;
-                padding-left: 35px;
-                padding-top: 10px;
+                padding-top: 5px;
                 float: left;
+				        position: relative;
                 // 侧边栏小箭头
                 i {
                     font-size: 14px;
                     width: 14px;
                     height: 67px;
                     color: #fff;
+										display: block;
+										position: absolute;
+										right: 20px;
+										top: 5px;
+										font-style: normal;
                 }
             }
 
@@ -142,6 +149,8 @@ span {
                 color: #fff;
                 font-size: 14px;
                 display: block;
+				text-align: left;
+				margin-left: 25px;
             }
         }
     }
@@ -150,8 +159,8 @@ span {
 // 轮播图侧边导航栏内容
 #banner .ban-nav-cont {
     position: absolute;
-    top: -553px;
     left: 176px;
+		top: -25px;
     width: 758px;
     height: 550px;
     background-color: #fff;
@@ -160,17 +169,26 @@ span {
     .ban-cont-list {
         margin: 50px 25px;
         li {
-            margin: 0 38px 38px 23px;
+					  
+            margin: 0 20px 38px 10px;
             color: #666;
             font-size: 100%;
             float: left;
+						width: 315px;
+						height: 120px;
             .dj {
+								
+							  float: right;
                 display: inline-block;
                 vertical-align: middle;
                 width: 168px;
                 font-size: 14px;
+								color: red;
+								p{
+									color: #555;
+								}
                 button {
-                    margin-top: 20px;
+                    // margin-top: 20px;
                     width: 98px;
                     height: 28px;
                     border: 1px solid #f30;
@@ -178,12 +196,14 @@ span {
                     line-height: 28px;
                     color: #f30;
                     cursor: pointer;
-                    background: white;
+                    background: #ccc;
+										background: #fff;
                 }
             }
             img {
                 width: 120px;
                 height: 120px;
+								display: inline-block;
                 vertical-align: middle;
             }
         }

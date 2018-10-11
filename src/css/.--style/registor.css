@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none;
+  float: left; }
+
+a {
+  text-decoration: none; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+html, body {
+  width: 100%;
+  color: #666;
+  font-family: "Microsoft YaHei","PingFang SC";
+  background: #fff; }
+
+img {
+  display: block; }
+
+.header {
+  width: 100%;
+  background: #fff;
+  height: 85px;
+  line-height: 85px; }
+  .header p {
+    width: 1206px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    height: 45px; }
+  .header span {
+    font-size: 32px;
+    color: #666;
+    line-height: 45px;
+    margin-left: 30px;
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: middle; }
+  .header a {
+    display: inline-block;
+    width: 76px; }
+    .header a img {
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+
+.middle {
+  position: relative; }
+
+.middle > img {
+  width: 100%; }
+
+fieldset {
+  width: 650px;
+  margin: 0 auto; }
+  fieldset p {
+    maigin: 15px auto; }
+
+.fwidth {
+  width: 80px;
+  float: left; }
+
+.error {
+  color: red; }
+
+.footer {
+  margin-top: 40px;
+  width: 100%; }
+  .footer .footer_box {
+    width: 1226px;
+    margin: 0 auto; }
+    .footer .footer_box .footnav {
+      padding-left: 365px; }
+      .footer .footer_box .footnav a {
+        display: inline-block;
+        width: 92px;
+        text-align: center;
+        border-right: 1px solid #ccc;
+        line-height: 12px;
+        font-size: 12px;
+        color: #666; }
+    .footer .footer_box .footbottom {
+      font-size: 12px;
+      color: #999;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 13px; }
+      .footer .footer_box .footbottom a {
+        line-height: 12px;
+        font-size: 12px;
+        color: #666; }
+
+/*# sourceMappingURL=registor.css.map */

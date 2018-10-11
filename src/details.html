@@ -42,17 +42,17 @@
 				<!-- 左边放大镜 -->
 				<div class="details_left">
 					
-					<div class="big_img">
+					<!-- <div class="big_img">
 						<img src="http://img.mall.tcl.com/dev1/0/000/536/0000536977.fid" >
 					</div>
 					<div class="small_img">
-						<ul class="clear">
+						<!-- <ul class="clear">
 							<li><img src="http://img.mall.tcl.com/dev1/0/000/536/0000536979.fid" alt=""></li>
 							<li><img src="http://img.mall.tcl.com/dev1/0/000/537/0000537007.fid" alt=""></li>
 							<li><img src="http://img.mall.tcl.com/dev1/0/000/537/0000537010.fid" alt=""></li>
 							<li><img src="http://img.mall.tcl.com/dev1/0/000/537/0000537013.fid" alt=""></li>
-						</ul>
-					</div>
+						</ul> 
+					</div> -->
 				</div>
 				
 				
@@ -126,5 +126,34 @@
 
 		<div id="footer"></div>
 		<script src="script/thirdplugins/jquery.js" type="text/javascript"></script>
-		<script src="script/js/details.js" type="text/javascript"></script>
+		<!-- <script src="script/js/details.js" type="text/javascript"></script> -->
+		<script type="text/javascript">
+			
+				$.ajax({
+					url:'http://10.31.162.186/TCLitems/php/details.php',
+					data:{
+						sid:location.search.substring(1).split('=')[1],//?sid=1  location.search=?   substring(1)把sid=1变成1项   然后用=分割 [1]取第一项，  location.search.substring(1).split('=')[1]的结果为1,所以sid:1
+					},
+					dataType:'json'
+				}).done(function(data){
+ 					var $str='<div class="details_img">'+'<a href="#"><img class="loading" src="'+data[0].url.split(',')[0]+'" alt="" sid="1"></a>'+'</div>'+
+ 				'<p class="details_title">'+'<a href="#">'+data[0].title+'</a>'+'</p>'+
+ 				'<p class="details_description">'+data[0].description+'</p>'+
+ 				'<span class="price">'+'￥'+data[0].price+'</span>'
+ 				$('.details_left').html($str);	
+ 				})
+// 			    $.ajax({
+// 					url:'http://10.31.162.186/TCLitems/php/details.php',
+// 					data:{
+// 						sid:location.search.substring(1).split('=')[1],
+// 					},
+// 					dataType:'json'
+// 				}).done(function(data){
+// 					var $str='<div class="img_2">'+'<a href="#">'+'<img src=" '+data[1].url.split(',')[0]+ '  ">'+'</a>'+'</div>'+
+// 					'<p>'+data[1].title+'</p>'+
+// 					'<p>'+'<a class="">'+data[1].description+'</a>'+'</p>'+
+// 					'<span>'+'￥'+data[1].price+'</span>'
+// 					$('.details_left').html($str);	
+				})
+		</script>
 	</body>

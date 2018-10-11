@@ -21,7 +21,6 @@ a{
 .wrapper{
 	width: 1226px;
 	margin: 0 auto ;
-	position: relative;
 }
 .header_top{
 	width:auto;
@@ -44,10 +43,15 @@ a{
 			  border-right:1px solid #CCCCCC;
 			}   
 		}
+		#wechat:hover{
+			.wechat{
+				display: block;
+			}
+		}	
 	}
 //
 	.header_top_right li .wechat{
-		display: block;
+		display: none;
 		position: absolute;
 		top:55px;
 		width: 180px;
@@ -55,7 +59,7 @@ a{
 		background-color: #fff;
 		border: 1px solid #ccc;
 		text-align: center;
-		z-index: 99;
+		z-index: 500;
 		left: -30px;
 		img{
 			width: 140px;
@@ -112,12 +116,8 @@ a{
 			a{
 				height: 70px;
 				display: block;
-				padding-left: 10px;
-				padding-right: 10px;
-				
+				padding-left: 20px;
 			}
-			
-			
 		}
 		}
 	.header_bottom_right{
@@ -146,36 +146,38 @@ a{
 	}
 }
 .li_nav{
-	display:none;
-	margin-top: -20px;
-	height: 210px;
-    padding: 30px 0 20px;
+	  width:100%;
+		position: absolute;
+		top: 155px;
+		z-index: 400;
+		margin: 0 auto;	
+		background: #fff;
+		margin-top: -20px;
+		height: 210px;
+    padding: 20px 0 20px;
     text-align: center;
 	ul{
-		max-width: 1920px;
+		width: 100%;
 		height: 100%;
-		margin: 0 auto;
-		display: inline-block;
 		li{
-			width:160px;
-			
+			margin:0 30px;
+			width:160px;	
 		}
-
 	}
 	a{
-		display: block;
 		font-size: 12px;
 		.description{	
-			margin-top: -20px;
+			margin-top: 20px;
 			height: 12px;
 			font-size: 12px;
 			line-height: 12px;
 			text-align: center;
 			color: #333;
 			overflow: hidden;
-			
+			border: 0;
 		} 
 		.red{
+			margin-top: 20px;
 			font-size: 12px;
 			line-height: 24px;
 			color: red;
